@@ -1,0 +1,30 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+    <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <a class="navbar-brand" [routerLink]="[' ']">
+            <img src="../../favicon.ico" width="20" height="20" alt=""> unique
+        </a>
+
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav">
+                <li ngbDropdown class="nav-item dropdown">
+                    <a class="nav-link pointer" id="account" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user-circle-o" aria-hidden="true "></i> Account <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="account ">
+                        <a class="dropdown-item" [routerLink]="['/dashboard']">Profile</a>
+                        <a class="dropdown-item pointer" (click)="logout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="form-inline my-2 my-lg-0 ">
+                <button class="btn btn-outline-secondary login " type="button " (click)="open() "> Login </button>
+                <button class="btn btn-outline-secondary register " type="button "> Register </button>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,30 @@
+.bg-faded {
+    background-color: #fff;
+    //border-bottom: 1px solid #0275d8;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+}
+
+button.btn.login {
+    border-radius: .35rem 0 0 .35rem;
+    border-right: 0px;
+}
+
+button.btn.register {
+    border-radius: 0 .35rem .35rem 0;
+}
+
+.dropdown-toggle::after {
+    display: none;
+    content: "";
+}
+
+a.pointer {
+    cursor: pointer;
+}
+
+a#account {
+    font-size: large;
+}
