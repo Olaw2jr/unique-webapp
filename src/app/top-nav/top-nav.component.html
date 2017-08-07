@@ -9,7 +9,8 @@
 
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto"></ul>
-            <ul class="navbar-nav">
+
+            <ul class="navbar-nav" *ngIf="authenticationService.isLoggedIn(); else loggedOut">
                 <li ngbDropdown class="nav-item dropdown">
                     <a class="nav-link pointer" id="account" ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
                         <i class="fa fa-user-circle-o" aria-hidden="true "></i> Account <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -21,10 +22,12 @@
                 </li>
             </ul>
 
-            <div class="form-inline my-2 my-lg-0 ">
-                <button class="btn btn-outline-secondary login " type="button " (click)="open() "> Login </button>
-                <button class="btn btn-outline-secondary register " type="button "> Register </button>
-            </div>
+            <ng-template #loggedOut>
+                <div class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-outline-secondary login" type="button" (click)="open()"> Login </button>
+                    <button class="btn btn-outline-secondary register" type="button"> Register </button>
+                </div>
+            </ng-template>
         </div>
     </div>
 </nav>

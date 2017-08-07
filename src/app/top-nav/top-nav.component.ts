@@ -13,11 +13,15 @@ import { AuthenticationService } from '../_services/authentication.service';
 })
 export class TopNavComponent implements OnInit {
 
-  constructor( private modalService: NgbModal, private authenticationService: AuthenticationService, private route: Router ) { }
+ showButtons: any;
+
+  constructor( private modalService: NgbModal, private authenticationService: AuthenticationService, private route: Router ) {
+    this.showButtons = this.authenticationService.isLoggedIn();
+    console.log(`kwann wewe unazingua ${this.showButtons}`);
+   }
 
   open(): void {
-    const modalRef = this.modalService.open( LoginComponent );
-    modalRef.componentInstance.name = `World`;
+    this.modalService.open( LoginComponent );
    }
 
   logout(): void {
