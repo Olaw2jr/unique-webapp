@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { UserService } from '../../_services/user.service';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileComponent implements OnInit {
 
-  constructor() { }
+  users = [];
+
+  constructor(private userservice: UserService) { }
+
+  private getUser () {
+    this.userservice.me().subscribe(users => { this.users = users; console.log(users.avatar_urls); });
+  }
 
   ngOnInit() {
+    this.getUser();
+    // console.log( this.users );
   }
 
 }

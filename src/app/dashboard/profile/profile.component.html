@@ -1,211 +1,37 @@
-<div class="col-md-9">
-    <div class="panel panel-default">
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-12 lead">User profile
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <img class="img-circle avatar avatar-original" style="-webkit-user-select:none; display:block; margin:auto;" src="http://robohash.org/sitsequiquia.png?size=120x120">
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h1 class="only-bottom-margin">User Name</h1>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <span class="text-muted">Email:</span> email@test.com<br>
-                            <span class="text-muted">Birth date:</span> 01.01.2001<br>
-                            <span class="text-muted">Gender:</span> male<br><br>
-                            <small class="text-muted">Created: 01.01.2015</small>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="activity-mini">
-                                <i class="glyphicon glyphicon-comment text-muted"></i> 500
-                            </div>
-                            <div class="activity-mini">
-                                <i class="glyphicon glyphicon-thumbs-up text-muted"></i> 1500
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <hr><button class="btn btn-default pull-right"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
-                </div>
-            </div>
-        </div>
+<div>
+    <div>
+        <h4>{{ users.name }}</h4>
     </div>
-</div>
-
-
-<div class="panel panel-info">
-    <div class="panel-heading">
-        <h3 class="panel-title">Sheena Shrestha</h3>
-    </div>
-    <div class="panel-body">
+    <div>
         <div class="row">
-            <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
-
-            <!--<div class="col-xs-10 col-sm-10 hidden-md hidden-lg"> <br>
-                  <dl>
-                    <dt>DEPARTMENT:</dt>
-                    <dd>Administrator</dd>
-                    <dt>HIRE DATE</dt>
-                    <dd>11/12/2013</dd>
-                    <dt>DATE OF BIRTH</dt>
-                       <dd>11/12/2013</dd>
-                    <dt>GENDER</dt>
-                    <dd>Male</dd>
-                  </dl>
-                </div>-->
-            <div class=" col-md-9 col-lg-9 ">
-                <table class="table table-user-information">
+            <div class="col-3" align="center"> <img alt="{{ users.name }}" src="http://1.gravatar.com/avatar/d69a308d3dc7b68ae80f7ada5742fd29?s=96&d=mm&r=g" class="img-fluid"> </div>
+            <div class=" col-9">
+                <table class="table">
                     <tbody>
                         <tr>
-                            <td>Department:</td>
-                            <td>Programming</td>
+                            <td scope="row">Student Reg No. :</td>
+                            <td>201511/2385</td>
                         </tr>
                         <tr>
-                            <td>Hire date:</td>
-                            <td>06/23/2013</td>
+                            <td scope="row">Program :</td>
+                            <td>Bachelor Degree in Hardware and Networking</td>
                         </tr>
                         <tr>
-                            <td>Date of Birth</td>
-                            <td>01/24/1988</td>
-                        </tr>
-
-                        <tr>
-                            <tr>
-                                <td>Gender</td>
-                                <td>Female</td>
-                            </tr>
-                            <tr>
-                                <td>Home Address</td>
-                                <td>Kathmandu,Nepal</td>
-                            </tr>
-                            <tr>
-                                <td>Email</td>
-                                <td><a href="mailto:info@support.com">info@support.com</a></td>
-                            </tr>
-                            <td>Phone Number</td>
-                            <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                            <td scope="row">Year :</td>
+                            <td>Year 2, Semester. 4 <br>
+                                <div class="progress m-b-20">
+                                    <div class="progress-bar progress-bar-primary " role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%; height: 1px;"></div>
+                                </div>
                             </td>
-
                         </tr>
-
+                        <tr>
+                            <td scope="row">Status :</td>
+                            <td>Active </td>
+                        </tr>
                     </tbody>
                 </table>
-
-                <a href="#" class="btn btn-primary">My Sales Performance</a>
-                <a href="#" class="btn btn-primary">Team Sales Performance</a>
             </div>
-        </div>
-    </div>
-    <div class="panel-footer">
-        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
-        <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
-    </div>
 
-</div>
-
-
-
-<div class="container" style="padding-top: 60px;">
-    <h1 class="page-header">Edit Profile</h1>
-    <div class="row">
-        <!-- left column -->
-        <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="text-center">
-                <img src="http://lorempixel.com/200/200/people/9/" class="avatar img-circle img-thumbnail" alt="avatar">
-                <h6>Upload a different photo...</h6>
-                <input type="file" class="text-center center-block well well-sm">
-            </div>
-        </div>
-        <!-- edit form column -->
-        <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
-            <div class="alert alert-info alert-dismissable">
-                <a class="panel-close close" data-dismiss="alert">×</a>
-                <i class="fa fa-coffee"></i> This is an <strong>.alert</strong>. Use this to show important messages to the user.
-            </div>
-            <h3>Personal info</h3>
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">First name:</label>
-                    <div class="col-lg-8">
-                        <input class="form-control" value="Jane" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Last name:</label>
-                    <div class="col-lg-8">
-                        <input class="form-control" value="Bishop" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Company:</label>
-                    <div class="col-lg-8">
-                        <input class="form-control" value="" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Email:</label>
-                    <div class="col-lg-8">
-                        <input class="form-control" value="janesemail@gmail.com" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-lg-3 control-label">Time Zone:</label>
-                    <div class="col-lg-8">
-                        <div class="ui-select">
-                            <select id="user_time_zone" class="form-control">
-                <option value="Hawaii">(GMT-10:00) Hawaii</option>
-                <option value="Alaska">(GMT-09:00) Alaska</option>
-                <option value="Pacific Time (US & Canada)">(GMT-08:00) Pacific Time (US & Canada)</option>
-                <option value="Arizona">(GMT-07:00) Arizona</option>
-                <option value="Mountain Time (US & Canada)">(GMT-07:00) Mountain Time (US & Canada)</option>
-                <option value="Central Time (US & Canada)" selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
-                <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
-                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-              </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label">Username:</label>
-                    <div class="col-md-8">
-                        <input class="form-control" value="janeuser" type="text">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label">Password:</label>
-                    <div class="col-md-8">
-                        <input class="form-control" value="11111122333" type="password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label">Confirm password:</label>
-                    <div class="col-md-8">
-                        <input class="form-control" value="11111122333" type="password">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="col-md-3 control-label"></label>
-                    <div class="col-md-8">
-                        <input class="btn btn-primary" value="Save Changes" type="button">
-                        <span></span>
-                        <input class="btn btn-default" value="Cancel" type="reset">
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 </div>

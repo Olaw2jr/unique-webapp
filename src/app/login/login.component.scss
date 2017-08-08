@@ -10,6 +10,10 @@
     margin-right: 5px;
 }
 
+.modal-header {
+    border-bottom: 1px solid #fff;
+}
+
 @media (min-width: 576px) {
     .modal-dialog {
         max-width: 430px;

@@ -4,7 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpModule } from '@angular/http';
 
+import { DashboardModule } from './dashboard/dashboard.module';
 import { AuthGuard } from './_guards/auth.guard';
+import { UserService } from './_services/user.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -27,10 +29,11 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpModule,
+    DashboardModule,
     NgbModule.forRoot()
   ],
   entryComponents: [LoginComponent],
-  providers: [AuthGuard],
+  providers: [AuthGuard, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
